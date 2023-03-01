@@ -1,0 +1,9 @@
+.SearchArea {
+    border: 3px solid red ;
+}
+.SearchBar {
+    border-radius: 3rem;
+    width: 40rem;
+    color: black;
+    background-color: white;
+}
