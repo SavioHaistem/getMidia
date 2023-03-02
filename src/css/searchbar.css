@@ -4,7 +4,7 @@
     padding: 1rem 1.8rem;
     border-radius: 3rem;
     width: 28rem;
-    color: rgb(193, 193, 193);
+    color: rgb(225, 225, 225);
     background-color: rgba(255, 255, 255, 0.256);
     backdrop-filter: blur( 0.4rem );
     border: 1px solid rgb(108, 108, 108);
@@ -14,7 +14,7 @@
     width: 32rem;
 }
 #searchbar::placeholder {
-    color: rgb(225, 225, 225);
+    color: rgb(208, 208, 208);
 }
 .SearchBar p {
     align-self: center;
