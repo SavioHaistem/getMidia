@@ -1,4 +1,4 @@
-import '../css/searcharea.css'
+import '../../css/searcharea.css'
 
 function SearchArea(props) {
     return (
