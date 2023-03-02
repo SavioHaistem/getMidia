@@ -1,11 +1,14 @@
 import './css/App.css'
 import SearchBar from './components/SearchBar'
+import SearchArea from './components/SearchArea'
 
 function App() {
   return (
-    <div className="App">
-      <SearchBar/>      
-    </div>
+    <>
+      <SearchArea>
+        <SearchBar/>
+      </SearchArea>      
+    </>
   )
 }
 
