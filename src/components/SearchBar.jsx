@@ -8,6 +8,7 @@ function SearchBar() {
              name="searchbar" 
              id="searchbar" 
              placeholder='Search'
+             className='transparentEffect'
             /> 
     </>
     );

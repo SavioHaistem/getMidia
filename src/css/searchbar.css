@@ -5,9 +5,6 @@
     border-radius: 3rem;
     width: 28rem;
     color: rgb(225, 225, 225);
-    background-color: rgba(255, 255, 255, 0.256);
-    backdrop-filter: blur( 0.4rem );
-    border: 1px solid rgb(108, 108, 108);
     transition: 0.3s;
 }
 #searchbar:hover {

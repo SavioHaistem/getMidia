@@ -1,4 +1,4 @@
-import './css/App.css'
+import './css/global.css'
 import SearchBar from './components/SearchBar'
 import SearchArea from './components/SearchArea'
 
