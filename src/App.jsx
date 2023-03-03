@@ -1,6 +1,6 @@
 import './css/global.css'
-import SearchBar from './components/SearchArea/SearchBar'
 import SearchArea from './components/SearchArea/SearchArea'
+import SearchBar from './components/SearchArea/SearchBar'
 import SearchFilter from './components/SearchArea/SearchFilter'
 
 function App() {
