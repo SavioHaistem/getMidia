@@ -1,9 +1,10 @@
 #searchbar {
     font-size: 18px;
     outline: none;
-    padding: 1rem 1.8rem;
+    padding-left: 2rem;
     border-radius: 3rem;
     width: 28rem;
+    height: 3.5rem;
     color: rgb(225, 225, 225);
     transition: 0.3s;
 }
