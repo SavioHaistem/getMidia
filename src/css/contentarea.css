@@ -1,10 +1,22 @@
 .contentarea { 
   margin: auto;
+  padding-right: 1rem;
   overflow: hidden;
   display: flex;
   height: 70vh;
   width: 95vw;
   overflow: auto;
+}
+.contentarea::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 1rem;
+}
+.contentarea::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.344);
+  backdrop-filter: blur( 1rem );
+  border: 1px solid rgba(108, 108, 108, 0.749);
+  box-shadow: 1.5px 0.5px rgba(0, 0, 0, 0.31);
+  border-radius: 10px;
 }
 .contentlist {
   display: grid;

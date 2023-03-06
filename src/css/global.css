@@ -16,3 +16,7 @@ body {
     border: 1px solid rgba(108, 108, 108, 0.648);
     box-shadow: 1.5px 0.5px rgba(0, 0, 0, 0.31);
 }
+.b {
+    width: 2rem;
+    height: 1rem;
+}

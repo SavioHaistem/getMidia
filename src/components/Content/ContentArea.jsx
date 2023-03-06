@@ -9,8 +9,8 @@ function ContentArea(props) {
         <ol className='contentlist'>
           {
             basedata.data.map(item => 
-              <li className='contentitem  transparentEffect'>
-                <h3> { item.item } </h3>
+              <li key={item.key} className='contentitem  transparentEffect'>
+                <h3> { item.name } </h3>
               </li>
           )}
         </ol>
