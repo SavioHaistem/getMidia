@@ -3,17 +3,19 @@ import SearchArea from './components/SearchArea/SearchArea'
 import SearchBar from './components/SearchArea/SearchBar'
 import SearchFilter from './components/SearchArea/SearchFilter'
 import ContentArea from './components/Content/ContentArea'
+import { useEffect, useState } from 'react'
 
 function App() {
-  return (
+
+  const [UserSearch, setUserSearch] = useState('Annabelle');
+  console.log(UserSearch)
+  return (  
     <>
       <SearchArea>
-        <SearchBar/>
+        <SearchBar setSearch={setUserSearch}/>
         <SearchFilter/>
       </SearchArea>
-      <ContentArea>
-        
-      </ContentArea>      
+      <ContentArea UserSearch={UserSearch}/>     
     </>
   )
 }
