@@ -1,7 +1,7 @@
 import '../../css/contentarea.css';
 import GetData from '../GetData';
 
-function ContentArea({data, UserSearch}) {
+function ContentArea({data}) {
   return (
     <>
       <div className="contentarea">
