@@ -15,7 +15,7 @@ function App() {
         <SearchBar setSearch={setUserSearch}/>
         <SearchFilter/>
       </SearchArea>
-      <ContentArea UserSearch={UserSearch} Page={Page}/>     
+      <ContentArea UserSearch={UserSearch} Page={Page} setPage={setPage}/>     
     </>
   )
 }
