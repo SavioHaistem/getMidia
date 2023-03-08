@@ -7,14 +7,15 @@ import { useState } from 'react'
 
 function App() {
 
-  const [UserSearch, setUserSearch] = useState('Annabelle');
+  const [UserSearch, setUserSearch] = useState('gato');
+  const [Page, setPage] = useState('1')
   return (  
     <>
       <SearchArea>
         <SearchBar setSearch={setUserSearch}/>
         <SearchFilter/>
       </SearchArea>
-      <ContentArea UserSearch={UserSearch}/>     
+      <ContentArea UserSearch={UserSearch} Page={Page}/>     
     </>
   )
 }
