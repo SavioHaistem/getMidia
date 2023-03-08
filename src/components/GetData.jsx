@@ -8,7 +8,7 @@ function GetData(WrappedComponent) {
     const getData = async()=>{
       try {
         await axios.get(
-          `http://www.omdbapi.com/?s=${UserSearch}&page=${Page}&apikey=d1293f7f`
+          `https://www.omdbapi.com/?s=${UserSearch}&page=${Page}&apikey=d1293f7f`
         )
         .then((response) => setResultSearched(response.data.Search));
       } catch(error) {
