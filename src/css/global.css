@@ -5,7 +5,7 @@ body {
     height: 100vh;
     color: white;
     background-color: rgb(0, 0, 0);
-    background-image: url('../src/assets/imgs/spacepixel.png');
+    background-image: url('../../public/imgs/spacepixel.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,6 +17,7 @@ body {
     box-shadow: 1.5px 0.5px rgba(0, 0, 0, 0.31);
 }
 .b {
+    
     width: 2rem;
     height: 1rem;
 }

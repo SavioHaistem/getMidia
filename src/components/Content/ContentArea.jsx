@@ -20,9 +20,7 @@ function ContentArea({data, Page, setPage}) {
           </div>)}
         </ol>
       </div>
-      <button onClick={()=>{setPage(++Page)}}>
-        change
-      </button>
+      <button onClick={()=>{setPage(++Page)}} className={"pageButton"}> change </button>
     </>
   );
 }

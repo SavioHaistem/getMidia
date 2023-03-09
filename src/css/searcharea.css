@@ -1,5 +1,8 @@
 .SearchArea {
+    margin: auto;
+    width: 80vw;
+    height: 10rem;
     display: flex;
     justify-content: center;
-    padding: 4rem 0px;
+    align-items: center;
 }

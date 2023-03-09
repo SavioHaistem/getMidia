@@ -1,8 +1,8 @@
 .searchfilter {
+  margin: 0px 1rem;
   display: flex;
-  margin-left: 2rem;
-  width: 3.3rem;
-  height: 3.3rem;
+  min-width: 3.3rem;
+  min-height: 3.3rem;
   border-radius: 3.3rem;
   justify-content: center;
   align-items: center;
@@ -10,4 +10,11 @@
 .filtericon {
   font-size: 22px;
   color: rgb(225, 225, 225);
+}
+
+@media (max-width: 590px) {
+  .searchfilter {
+    min-width: 3rem;
+    min-height: 3rem;
+  }
 }
