@@ -1,66 +1,46 @@
 .contentarea { 
   margin: auto;
-  padding-right: 1rem;
   display: flex;
   height: 70vh;
   width: 95vw;
   overflow: auto;
 }
 .contentarea::-webkit-scrollbar {
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 1rem;
-}
-.contentarea::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.344);
-  backdrop-filter: blur( 1rem );
-  border: 1px solid rgba(108, 108, 108, 0.749);
-  box-shadow: 1.5px 0.5px rgba(0, 0, 0, 0.31);
-  border-radius: 10px;
+  display: none;
 }
 .contentlist {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-  grid-auto-rows: 17rem;
-  grid-gap: 1.5rem;
-  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 12rem));
+  grid-auto-rows: 19rem;
+  justify-content: space-evenly;
+  grid-gap: 20px 10px;
   width: 100vw;
 }
-.contentitem {
+.movieCard {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
-  list-style: none;
+  align-items: center;
+  width: 12rem;
+  border-radius: 1rem;
+}
+.movieCard .movieDate {
   text-align: center;
-  background-color: rgba(246, 246, 246, 0.212);
-  color: rgb(206, 206, 206);
-  border-radius: 1.1rem;
-  height: 17rem;
 }
-.imageMovie {
-  width: 9rem;
-  height: 12rem;
+.movieCard .moviePoster {
+  border-radius: 0.5rem;
+  width: 180px;
+  height: 230px;
 }
-.pageButton {
-  margin: auto;
+.movieCard .movieTitle {
+  font-weight: 1000;
+  max-width: 10rem;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 @media (max-width: 590px) {
-  .contentlist {
-    grid-gap: 0px;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 1fr; 
-  }
-  .contentitem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 15rem;
-    width: 11rem;
-  }
-  .imageMovie {
-    width: 7rem;
-    height: 10rem;
-  }
 }

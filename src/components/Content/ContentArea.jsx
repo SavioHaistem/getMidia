@@ -4,23 +4,28 @@ import GetData from '../GetData';
 function ContentArea({data, Page, setPage}) {
   return (
     <>
+    {console.log(data)}
       <div className="contentarea">
         <ol className='contentlist'>
-          {data && data.map((movie, index) => <div 
+          {data && data.map((movie, index) => (
+
+          <div 
+            style={{ background: `linear-gradient(rgba(0, 0, 0, 0.511),rgba(0, 0, 0, 0.511)), url(https://image.tmdb.org/t/p/w200/${movie.backdrop_path})` }} 
             key={index} 
-            className="contentitem transparentEffect">
-              <p>{movie.Year}</p>
+            className="movieCard" >
 
-              <img 
-                className='imageMovie' 
-                src={movie.Poster}>
-              </img>
+            <p className='movieDate'>{movie.release_date}</p>
+            <img className='moviePoster' src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}></img>
+            <p className='movieTitle'>{movie.title}</p>
+          </div>
 
-              <p>{movie.Title}</p>
-          </div>)}
+        ))}
+
         </ol>
       </div>
-      <button onClick={()=>{setPage(++Page)}} className={"pageButton"}> change </button>
+      <div className="pages">
+        <button onClick={()=>{setPage(++Page)}} className={"pageButton"}> change </button>
+      </div>
     </>
   );
 }

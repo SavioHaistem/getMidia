@@ -2,15 +2,16 @@ import axios from "axios";
 import { useState, useEffect } from "react"
 
 function GetData(WrappedComponent) {
-
   function newComponent({UserSearch, Page, setPage}) {
+    const mykey = `5c9f10225671a251a0d525e14cb03542`
     const [ResultSearched, setResultSearched] = useState();
+
     const getData = async()=>{
       try {
         await axios.get(
-          `https://www.omdbapi.com/?s=${UserSearch}&page=${Page}&apikey=d1293f7f`
+          `https://api.themoviedb.org/3/search/movie?api_key=${mykey}&language=pt-BR&page=${Page}&query=${UserSearch}`
         )
-        .then((response) => setResultSearched(response.data.Search));
+        .then((response) => setResultSearched(response.data.results));
       } catch(error) {
         console.log(error)
       }
