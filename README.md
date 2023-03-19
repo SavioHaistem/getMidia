@@ -2,5 +2,5 @@
 <h2 align="center"> Aplicação para exibir catálago de filmes, Séries e Animes </h2>
 
 <h3> Tecnologias usadas </h3>
-<p> Vite: React </p>
-<p> Axios </p>
+Vite: React
+Axios
