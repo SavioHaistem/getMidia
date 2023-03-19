@@ -1,5 +1,5 @@
 <h1 align="center"> GetMidia </h1>
 <h2 align="center"> Aplicação para exibir catálago de filmes, Séries e Animes </h2>
 
-<h2> Para quê serve </h2>
-<p> A ideia inicial da aplicação é servir como um catálogo de Filmes Séries e Animes usando a API OMDB</p>
+<h2> Tecnologias usadas </h2>
+<p> Vite: React </p>
