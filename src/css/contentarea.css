@@ -42,5 +42,9 @@
   overflow: hidden;
   white-space: nowrap;
 }
+.pagebutton {
+  width: 50px;
+  height: 20px;
+}
 @media (max-width: 590px) {
 }
