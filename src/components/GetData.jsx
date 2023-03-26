@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
 function GetData(WrappedComponent) {
   function newComponent({UserSearch, Page, setPage}) {
@@ -13,14 +13,13 @@ function GetData(WrappedComponent) {
         await axios.get(
           `https://api.themoviedb.org/3/search/movie?api_key=${mykey}&language=pt-BR&page=${Page}&query=${UserSearch}`
         )
-        .then((response) => setTotalPages(response.data.total_pages, setResultSearched(response.data.results)))
+        .then((response) => setResultSearched(response.data))
       } catch(error) {
         console.log(error)
       }
     }
-
+    
     useEffect(()=>{getData()},[UserSearch, Page])
-
 
     return <WrappedComponent data={ResultSearched} Page={Page} setPage={setPage} TotalPages={TotalPages}/>
   }

@@ -8,7 +8,7 @@ import { useState } from 'react'
 function App() {
 
   const [UserSearch, setUserSearch] = useState('gato');
-  const [Page, setPage] = useState('1')
+  const [Page, setPage] = useState('1');
   return (  
     <>
       <SearchArea>
