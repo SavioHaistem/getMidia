@@ -1,23 +1,10 @@
-import './css/global.css'
-import SearchArea from './components/SearchArea/SearchArea'
-import SearchBar from './components/SearchArea/SearchBar'
-import SearchFilter from './components/SearchArea/SearchFilter'
-import ContentArea from './components/Content/ContentArea'
-import { useState } from 'react'
+import Home from "./routes/home/Home"
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-
-  const [UserSearch, setUserSearch] = useState('gato');
-  const [Page, setPage] = useState('1');
+function GetMidia() {
   return (  
-    <>
-      <SearchArea>
-        <SearchBar setSearch={setUserSearch}/>
-        <SearchFilter/>
-      </SearchArea>
-      <ContentArea UserSearch={UserSearch} Page={Page} setPage={setPage}/>     
-    </>
+   <Home/>
   )
 }
 
-export default App
+export default GetMidia

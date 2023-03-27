@@ -1,6 +1,6 @@
 import '../../css/searchbar.css'
 
-function SearchBar({setSearch}) {
+function SearchBar({setUserSearch}) {
     return (
     <>
             <input
@@ -9,7 +9,7 @@ function SearchBar({setSearch}) {
              id="searchbar" 
              placeholder='Search'
              className='transparentEffect'
-             onChange={(e)=>setSearch(e.target.value)}
+             onChange={(e)=>setUserSearch(e.target.value)}
             /> 
     </>
     );
