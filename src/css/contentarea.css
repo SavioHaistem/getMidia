@@ -30,6 +30,8 @@
   width: 13rem;
   height: 20rem;
   border-radius: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .movieCardBackground {
   object-fit: cover;
@@ -46,16 +48,19 @@
   z-index: 1;
 }
 .movieCard .movieDate {
+  z-index: 1;
   text-align: center;
 }
 .movieCard .moviePoster {
   border-radius: 0.5rem;
   width: 180px;
-  height: 230px;
+  height: 250px;
 }
-.movieCard .movieTitle {
+.movieCard .cardText { 
+  margin: auto;
+  z-index: 1;
   font-weight: 1000;
-  max-width: 10rem;
+  max-width: 8rem;
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
