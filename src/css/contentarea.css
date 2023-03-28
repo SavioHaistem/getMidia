@@ -1,7 +1,7 @@
 .contentarea { 
   margin: auto;
   display: flex;
-  height: 70vh;
+  height: 76vh;
   width: 95vw;
   overflow: auto;
 }
@@ -14,11 +14,9 @@
   grid-auto-rows: 20rem;
   grid-gap: 2rem;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
   width: 100vw;
-}
-.transparentCard {
-  background-color: rgb(89, 89, 89);
-  border: 1px solid rgba(60, 60, 60, 0.648);
 }
 .movieCard {
   position: relative;
@@ -33,8 +31,13 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.movieCard:hover {
+  width: 13.6rem;
+  height: 20.6rem;
+}
 .movieCardBackground {
   object-fit: cover;
+  object-position: center;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -42,6 +45,12 @@
   left: 0;
   filter: blur(8px);
   overflow: hidden;
+}
+.BackgroundBlackEfect {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.358);
 }
 .posterWrapper {
   position: relative;

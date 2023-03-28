@@ -18,12 +18,13 @@ function ContentArea({data, setUserSearch}) {
           {data && data.results.map((movie, index) => 
           (
             <React.Fragment key={`${index}`}>
-              <Link to={`/${index}`} key={index} style={{textDecoration:'none', color: 'white', margin: 'none'}}>
+              <Link to={`/${index}`} style={{textDecoration:'none', color: 'white', margin: 'none'}}>
 
-                <div className="movieCard transparentEffect" >
-                  <div className="movieCardBackground transparentCard">
-                    <img src={`${`https://image.tmdb.org/t/p/original/${movie.poster_path}`}`} alt={`${movie.name}`} />
+                <div className="movieCard transparentEffect">
+                  <div className="movieCardBackground">
+                    <img src={`${`https://image.tmdb.org/t/p/w342/${movie.poster_path}`}`} alt={`${movie.name}`} />
                   </div>
+                  <div className="BackgroundBlackEfect"></div>
                     
                     <div className="posterWrapper">
                     <p className="cardText">{movie.title}</p>
