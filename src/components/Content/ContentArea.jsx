@@ -25,7 +25,6 @@ function ContentArea({data, setUserSearch}) {
                     <img src={`${`https://image.tmdb.org/t/p/w342/${movie.poster_path}`}`} alt={`${movie.name}`} />
                   </div>
                   <div className="BackgroundBlackEfect"></div>
-                    
                     <div className="posterWrapper">
                     <p className="cardText">{movie.title}</p>
                       <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
