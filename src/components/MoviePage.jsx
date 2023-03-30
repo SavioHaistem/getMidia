@@ -1,11 +1,13 @@
 import React from 'react';
+import GetData from './GetData';
 
-function MoviePage(props) {
+function MoviePage({data}) {
+  console.log(data && data.original_title)
   return(
     <div>
-      <h1> Movie details </h1>
+      
     </div>
   )
 }
 
-export default MoviePage;
+export default GetData(MoviePage);

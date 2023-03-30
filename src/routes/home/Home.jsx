@@ -1,13 +1,13 @@
 import '../../css/global.css';
 import ContentArea from '../../components/Content/ContentArea';
-import { useState } from 'react'
 import MoviePage from '../../components/MoviePage';
+import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom';
 
 function Home() {
 
   const [UserSearch, setUserSearch] = useState();
-  const [Page, setPage] = useState('1');
+  const [Page, setPage] = useState('2');
   return (  
     <>
       <Routes>
