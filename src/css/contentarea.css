@@ -11,30 +11,29 @@
 .contentlist {
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 15rem));
-  grid-auto-rows: 23rem;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 14rem));
+  grid-auto-rows: 21rem;
+  gap: 1rem;
   width: 100vw;
-  align-content: center;
+  justify-content: center;
   justify-items: center;
-  align-items: center;
-  justify-content: center; 
+  align-items: center ;
 }
 .movieCard {
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  justify-items: center;
+  align-content: center;
   width: 13rem;
   height: 20rem;
   border-radius: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  transition: 0.1s all;
+  transition: 0.2s all;
 }
 .movieCard:hover {
-  box-shadow: unset white 3px;
   height: 20.7rem;
   width: 13.7rem;
 }
@@ -59,22 +58,16 @@
   position: relative;
   z-index: 1;
 }
-.movieCard .movieDate {
-  z-index: 1;
-  text-align: center;
-}
 .movieCard .moviePoster {
   border-radius: 0.5rem;
   width: 180px;
   height: 250px;
 }
-.movieCard .cardText { 
-  margin: auto;
-  z-index: 1;
+.movieCard .cardText {
   font-weight: 1000;
-  max-width: 8rem;
+  margin: auto;
+  width: 8rem;
   text-align: center;
-  overflow: hidden;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
