@@ -1,12 +1,12 @@
 import '../../css/global.css';
-import MovieDetails from '../../components/MoviePage';
 import ContentArea from '../../components/Content/ContentArea';
 import { useState } from 'react'
+import MoviePage from '../../components/MoviePage';
 import { Route, Routes } from 'react-router-dom';
 
 function Home() {
 
-  const [UserSearch, setUserSearch] = useState('gato');
+  const [UserSearch, setUserSearch] = useState();
   const [Page, setPage] = useState('1');
   return (  
     <>
@@ -21,9 +21,9 @@ function Home() {
               setUserSearch={setUserSearch} /> 
             }/>
         <Route 
-          path='*' 
-          element={ <MovieDetails/> } />
-      </Routes>
+          path={'/movie/:id'} 
+          element={ <MoviePage/> } />  
+        </Routes>
     </>
   )
 }

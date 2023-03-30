@@ -18,7 +18,7 @@ function ContentArea({data, setUserSearch}) {
           {data && data.results.map((movie, index) => 
           (
             <React.Fragment key={`${index}`}>
-              <Link to={`/${index}`} style={{textDecoration:'none', color: 'white', margin: 'none'}}>
+              <Link to={`/movie/${movie.id}`} style={{textDecoration:'none', color: 'white', margin: 'none'}}>
 
                 <div className="movieCard transparentEffect">
                   <div className="movieCardBackground">
