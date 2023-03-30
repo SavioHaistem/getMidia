@@ -1,7 +1,7 @@
 .contentarea { 
   margin: auto;
   display: flex;
-  height: 77vh;
+  height: 78vh;
   width: 95vw;
   overflow: auto;
 }
@@ -9,15 +9,15 @@
   display: none;
 }
 .contentlist {
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 13rem));
-  grid-auto-rows: 20.6rem;
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 15rem));
+  grid-auto-rows: 23rem;
   width: 100vw;
-  height: 200vh;
+  align-content: center;
   justify-items: center;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
 }
 .movieCard {
   position: relative;
@@ -35,8 +35,8 @@
 }
 .movieCard:hover {
   box-shadow: unset white 3px;
-  width: 13.6rem;
-  height: 20.6rem;
+  height: 20.7rem;
+  width: 13.7rem;
 }
 .movieCardBackground {
   object-fit: cover;
