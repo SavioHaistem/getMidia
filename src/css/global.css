@@ -12,13 +12,12 @@ body {
     background-position: center;
 }
 .transparentEffect {
-    background-color: rgba(255, 255, 255, 0.221);
-    backdrop-filter: blur( 1rem );
-    border: 1px solid rgba(108, 108, 108, 0.648);
+    background-color: rgba(255, 255, 255, 0.123);
+    backdrop-filter: blur( 1.5rem );
+    border: 1px solid rgba(139, 139, 139, 0.648);
     box-shadow: 1.5px 0.5px rgba(0, 0, 0, 0.31);
 }
 .b {
-    
     width: 2rem;
     height: 1rem;
 }

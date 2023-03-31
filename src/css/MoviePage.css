@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.movieTab {
+  width: 70vw;
+  height: 95vh;
+  border-radius: 50px 50px 0px 0px;
+  overflow: hidden;
+}
+.backgroundMovieTab {
+  display: flex;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+}
+.backgroundMovieTab img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
