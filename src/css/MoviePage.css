@@ -4,19 +4,27 @@ body {
   align-items: flex-end;
 }
 .movieTab {
+  margin: auto;
   width: 70vw;
   height: 95vh;
   border-radius: 50px 50px 0px 0px;
   overflow: hidden;
 }
 .backgroundMovieTab {
+  position: absolute;
   display: flex;
-  height: 70%;
+  height: 70vh;
   width: 100%;
   overflow: hidden;
 }
 .backgroundMovieTab img {
+  position: absolute;
+  z-index: 1;
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+.movieName {
+  position: absolute;
+  z-index: 3;
 }
