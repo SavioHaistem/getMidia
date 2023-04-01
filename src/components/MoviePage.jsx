@@ -10,10 +10,14 @@ function MoviePage({data}) {
   <>
     <div className='movieTab transparentEffect'>
       <div className="backgroundMovieTab">
-      <div className="blackEffect"></div>
-        <img className="transparentEffect" src={`https://image.tmdb.org/t/p/original/${data?.backdrop_path}`} alt="" />
+      <div className="blackEffect"><h1 className='MovieTitle'>{data?.original_title}</h1></div>
+        <img src={`https://image.tmdb.org/t/p/original/${data?.backdrop_path}`} alt="" />
       </div>
-      <h1>{data?.original_title}</h1>
+      <div className="movieDetails">
+        <li>
+          <h3>Avaliação</h3>
+        </li>
+      </div>
     </div>
   </>
   )

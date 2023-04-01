@@ -4,27 +4,35 @@ body {
   align-items: flex-end;
 }
 .movieTab {
+  display: flex;
+  border: 2px solid green;
+  background-color: black;
   margin: auto;
   width: 70vw;
   height: 95vh;
   border-radius: 50px 50px 0px 0px;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 .backgroundMovieTab {
   position: absolute;
   display: flex;
-  height: 70vh;
+  height: 75vh;
   width: 100%;
   overflow: hidden;
 }
 .backgroundMovieTab img {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
+  border: 3px solid red;
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
-.movieName {
-  position: absolute;
-  z-index: 3;
+.movieDetails {
+  
+  position: relative;
+  align-self: flex-end;
+  border: 3px solid blue;
+  height: 20vh;
+  width: 100%;
 }
