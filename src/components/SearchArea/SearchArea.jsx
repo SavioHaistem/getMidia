@@ -1,10 +1,13 @@
 import '../../css/searcharea.css'
+import SearchBar from './SearchBar'
+import SearchFilter from './SearchFilter'
 
-function SearchArea(props) {
+function SearchArea({setUserSearch}) {
     return (
     <>
         <div className='SearchArea'>
-            {props.children}
+            <SearchBar setUserSearch={setUserSearch}/>
+            <SearchFilter/>
         </div>
     </>    
         

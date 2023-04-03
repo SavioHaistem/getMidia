@@ -8,16 +8,18 @@ function MoviePage({data}) {
   console.dir(data && data)
   return(
   <>
-    <div className='movieTab transparentEffect'>
-      <div className="backgroundMovieTab">
-      <div className="blackEffect"><h1 className='MovieTitle'>{data?.original_title}</h1></div>
-        <img src={`https://image.tmdb.org/t/p/original/${data?.backdrop_path}`} alt="" />
+    <div className='movieTab transparentEffect scroolBar'>
+      <div className="fixPosition">
+        <div className="backgroundMovieTab">
+          <div className="blackEffect"><h1 className='MovieTitle'>{data?.title}</h1></div>
+            <img src={`https://image.tmdb.org/t/p/original/${data?.backdrop_path}`} alt="" />
+        </div>
       </div>
-      <div className="movieDetails">
-        <li>
-          <h3>Avaliação</h3>
-        </li>
-      </div>
+        <div className="movieSubTitle">
+          <li>
+            <p>{data?.overview}</p>
+          </li>
+        </div>
     </div>
   </>
   )

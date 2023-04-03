@@ -1,39 +1,21 @@
 import '../../css/contentarea.css';
 import React from 'react';
 import GetData from '../GetData';
-import SearchArea from '../SearchArea/SearchArea';
-import SearchFilter from '../SearchArea/SearchFilter';
-import SearchBar from '../SearchArea/SearchBar';
 import { Link } from 'react-router-dom';
+import { ContentMovieCard } from './ContentMovieCard';
+import SearchArea from '../SearchArea/SearchArea';
 
 function ContentArea({data, setUserSearch}) {
   return (
     <>
-    <SearchArea>
-      <SearchBar setUserSearch={(text)=>setUserSearch(text)}/>
-      <SearchFilter/>
-    </SearchArea>
+    <SearchArea setUserSearch={setUserSearch}/>
       <div className="contentarea">
         <ol className='contentlist'>
           {data && data.results.map((movie, index) => 
           (
             <React.Fragment key={`${index}`}>
               <Link to={`/movie/${movie.id}`} style={{textDecoration:'none', color: 'white', margin: 'none'}}>
-
-                <div className="movieCard transparentEffect">
-                  <div className="movieCardBackground">
-                    <img src={`${`https://image.tmdb.org/t/p/w342/${movie.poster_path}`}`} alt={`${movie.name}`} />
-                  </div>
-                    <div className="posterWrapper">
-                      <p className="cardText">{movie.title}</p>
-                        <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
-                           alt={`${movie.name}_Background`}
-                           className="moviePoster" />
-                      <p className="cardText"> {`${movie.release_date}`} </p>
-                    </div>
-                                      
-                </div>
-
+                <ContentMovieCard movie={movie}/>
               </Link>
             </React.Fragment>
           ))}

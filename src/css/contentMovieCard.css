@@ -1,0 +1,47 @@
+.movieCard {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  width: 13rem;
+  height: 20rem;
+  border-radius: 1rem;
+  transition: 0.2s all;
+}
+.movieCard:hover {
+  height: 20.7rem;
+  width: 13.7rem;
+}
+.movieCardBackground {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  filter: blur(8px);
+  overflow: hidden;
+} 
+.posterWrapper {
+  position: relative;
+  z-index: 1;
+}
+.movieCard .moviePoster {
+  border-radius: 0.5rem;
+  width: 180px;
+  height: 250px;
+}
+.movieCard .cardText {
+  font-weight: 1000;
+  margin: auto;
+  width: 8rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
