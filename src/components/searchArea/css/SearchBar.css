@@ -1,4 +1,4 @@
-#searchbar {
+.SearchBar {
     position: relative;
     font-size: 18px;
     outline: none;
@@ -9,10 +9,10 @@
     color: rgb(225, 225, 225);
     transition: all 0.2s;
 }
-#searchbar:hover {
+.SearchBar:hover {
     width: 32rem;
 }
-#searchbar::placeholder {
+.SearchBar::placeholder {
     color: rgb(208, 208, 208);
 }
 .SearchBar p {
@@ -20,7 +20,7 @@
 }
 
 @media (max-width: 590px) {
-    #searchbar {
+    .SearchBar {
         width: 15rem;
         height: 3rem;
     }

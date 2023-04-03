@@ -1,14 +1,12 @@
-import '../css/searchbar.css'
+import './css/searchBar.css'
 
 function SearchBar({setUserSearch}) {
     return (
     <>
             <input
-             type="text"
-             name="searchbar" 
-             id="searchbar" 
+             type="text" 
              placeholder='Search'
-             className='transparentEffect'
+             className='SearchBar transparentEffect'
              onChange={(e)=>setUserSearch(e.target.value)}
             /> 
     </>

@@ -1,9 +1,9 @@
-import '../../css/contentarea.css';
-import GetData from '../../components/GetData';
+import '../css/home.css'
+import GetData from '../../../components/GetData';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ContentMovieCard from '../../components/MovieCard';
-import SearchArea from './SearchArea/components/SearchArea';
+import ContentMovieCard from '../../../components/movieCard/MovieCard';
+import SearchArea from '../../../components/SearchArea/SearchArea';
 
 function Home({data, setUserSearch}) {
   return (

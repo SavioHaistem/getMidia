@@ -1,4 +1,4 @@
-import '../css/movieCard.css'
+import './css/movieCard.css'
 
 function ContentMovieCard({movie}) {
   return (

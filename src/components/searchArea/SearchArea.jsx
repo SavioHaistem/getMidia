@@ -1,6 +1,6 @@
-import '../css/searchArea.css'
-import SearchBar from './searchBar'
-import SearchFilter from './searchFilter'
+import './css/searchArea.css'
+import SearchBar from './SearchBar';
+import SearchFilter from './SearchFilter';
 
 function SearchArea({setUserSearch}) {
     return (
