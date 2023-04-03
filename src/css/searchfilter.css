@@ -1,10 +1,10 @@
 .searchfilter {
   margin: 0px 1rem;
   display: flex;
-  min-width: 3.3rem;
+  width: 18rem;
   min-height: 3.3rem;
   border-radius: 3.3rem;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .filtericon {
@@ -14,7 +14,6 @@
 
 @media (max-width: 590px) {
   .searchfilter {
-    min-width: 3rem;
-    min-height: 3rem;
+    display: none;
   }
 }

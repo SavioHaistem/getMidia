@@ -8,6 +8,7 @@ function SearchFilter() {
     <>
       <div className="searchfilter transparentEffect">
         <i className="filtericon fas fa-filter"></i>
+        <p style={{fontSize: '12px'}}>Apenas filmes no momento</p>
       </div>
     </>
   );

@@ -35,12 +35,14 @@ body {
   width: 100%;
 }
 .movieTitle {
+  margin: 0px 1rem;
   text-align: center;
   max-width: 60rem;
   grid-template: movieTitle;
   justify-self: center;
 }
 .movieSubTitle {
+  margin: 0px;
   grid-area: movieSubTitle;
   padding-bottom: 4rem;
   justify-self: center;
@@ -53,9 +55,20 @@ body {
 }
 .movieTagline {
   grid-area: movieTagline;
+  justify-self: center;
+  text-align: center;
   color: rgb(149, 149, 149);
-  margin: auto;
+  margin: 0px 1rem 1rem;
 }
 .fixposition {
   grid-area: fixposition;
+}
+
+@media (max-width: 590px) {
+  .movieTab {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    border-radius: 0px;
+  }
 }
