@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://kit-free.fontawesome.com/releases/latest/css/free.min.css');
 html {
-    background-color: rgb(0, 0, 0);
+    background-color: white;
 }
 body {
     font-family: 'Poppins';
     height: 100vh;
-    color: rgb(255, 255, 255);
+    color: white;
     background-color: rgb(0, 0, 0);
     background-image: url('../../public/imgs/spacepixel.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
 }
 .transparentEffect {
-    background-color: rgba(134, 134, 134, 0.374);
+    background-color: rgba(149, 149, 149, 0.363);
     backdrop-filter: blur( 1rem );
+    border: 1px solid rgba(139, 139, 139, 0.648);
+    box-shadow: 1.5px 0.5px rgb(0, 0, 0);
 }
 .blackEffect {
     padding-bottom: 2rem;
@@ -28,5 +29,4 @@ body {
 }
 .scroolBar::-webkit-scrollbar {
     display: none;
-    background-color: aqua;
 }
