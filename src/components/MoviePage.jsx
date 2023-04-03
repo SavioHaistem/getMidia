@@ -1,7 +1,6 @@
 import React from 'react';
 import GetData from './GetData';
 import '../css/MoviePage.css'
-import '../css/contentArea.css'
 
 function MoviePage({data}) {
 
@@ -11,10 +10,13 @@ function MoviePage({data}) {
     <div className='movieTab transparentEffect scroolBar'>
       <div className="fixPosition">
         <div className="backgroundMovieTab">
-          <div className="blackEffect"><h1 className='MovieTitle'>{data?.title}</h1></div>
+          <div className="blackEffect"></div>
             <img src={`https://image.tmdb.org/t/p/original/${data?.backdrop_path}`} alt="" />
         </div>
       </div>
+      <h1 className='movieTitle'>{data?.title}</h1>
+      <p className='movieTagline'>{data?.tagline}</p>
+      <h4 className='movieDate'>{data?.release_date.substr(0,4)}</h4>
         <div className="movieSubTitle">
           <li>
             <p>{data?.overview}</p>

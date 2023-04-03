@@ -5,7 +5,14 @@ body {
 }
 .movieTab {
   display: grid;
-  grid-template-rows: 75vh 1fr 1fr;
+  grid-template-rows: 65vh 1fr 1fr 1fr 2fr;
+  grid-template-areas: 
+  'fixposition'
+  'movieTitle'
+  'movieTagline'
+  'movieDate'
+  'movieSubTitle'
+  ;
   background-color: black;
   margin: auto;
   width: 75vw;
@@ -27,9 +34,28 @@ body {
   height: 100%;
   width: 100%;
 }
+.movieTitle {
+  text-align: center;
+  max-width: 60rem;
+  grid-template: movieTitle;
+  justify-self: center;
+}
 .movieSubTitle {
+  grid-area: movieSubTitle;
   padding-bottom: 4rem;
   justify-self: center;
   text-align: center;
   width: 60%;
+}
+.movieDate {
+  grid-area: movieDate;
+  margin: 0px auto 1rem auto;
+}
+.movieTagline {
+  grid-area: movieTagline;
+  color: rgb(149, 149, 149);
+  margin: auto;
+}
+.fixposition {
+  grid-area: fixposition;
 }

@@ -20,9 +20,6 @@ body {
     box-shadow: 1.5px 0.5px rgb(0, 0, 0);
 }
 .blackEffect {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
     padding-bottom: 2rem;
     z-index: -1;
     position: absolute;
