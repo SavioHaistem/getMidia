@@ -1,4 +1,4 @@
-import '../../css/contentMovieCard.css'
+import '../css/movieCard.css'
 
 function ContentMovieCard({movie}) {
   return (
@@ -18,4 +18,4 @@ function ContentMovieCard({movie}) {
   </>);
 }
 
-export {ContentMovieCard};
+export default ContentMovieCard;

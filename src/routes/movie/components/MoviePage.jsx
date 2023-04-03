@@ -1,5 +1,5 @@
 import React from 'react';
-import GetData from './GetData';
+import GetData from '../../../components/GetData';
 import '../css/MoviePage.css'
 
 function MoviePage({data}) {
