@@ -3,11 +3,11 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ContentMovieCard from '../../../components/movieCard/MovieCard';
 import SearchArea from '../../../components/SearchArea/SearchArea';
-import useFetchData from '../../../hooks/test';
+import useFetch from '../../../hooks/useFatch'
 
 
 function Home({userSearch, setUserSearch}) {
-  const {response, error} = useFetchData(userSearch)
+  const {response, error} = useFetch(userSearch)
 
   return (
     <>

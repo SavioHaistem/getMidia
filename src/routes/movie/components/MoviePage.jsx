@@ -1,17 +1,15 @@
 import React, { useEffect } from 'react';
 import '../css/MoviePage.css'
 import Banner from '../../../components/TextBanner/banner';
-import useFetchData from '../../../hooks/test';
+import useFetch from '../../../hooks/useFatch';
 import { useParams } from 'react-router-dom';
 
 function MoviePage(props) {
   const {id} = useParams()
-  const {response, error} = useFetchData(undefined,id)
+  const {response, error} = useFetch(undefined,id)
   
   return(
   <>
-  {console.dir(response)}
-  {console.log(error)}
   <div className="display">
     <div className="backgroundMovie">
         <div className="movieHeader">
