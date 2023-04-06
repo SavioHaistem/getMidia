@@ -7,6 +7,7 @@ function ContentMovieCard({movie}) {
       <div className="movieCardBackground">
         <img src={`${`https://image.tmdb.org/t/p/w342/${movie.poster_path}`}`} alt={`${movie.name}`} />
       </div>
+        <div className='gradientBlackEffect'></div>
         <div className="posterWrapper">
           <p className="cardText">{movie.title}</p>
             <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}

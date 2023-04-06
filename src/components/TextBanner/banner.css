@@ -1,0 +1,10 @@
+.banner {
+  font-weight: 900;
+  margin: auto;
+  color: black;
+  background-color: aliceblue;
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 8px;
+  box-shadow: inset white 2px 2px;
+}

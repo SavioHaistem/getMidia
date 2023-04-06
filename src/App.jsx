@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 
 function GetMidia() {
 
-  const [UserSearch, setUserSearch] = useState();
+  const [userSearch, setUserSearch] = useState('gato');
   const [Page, setPage] = useState('2');
   return (  
     <>
@@ -15,7 +15,7 @@ function GetMidia() {
           path="/" 
           element={
             <Home 
-              UserSearch={UserSearch} 
+              userSearch={userSearch} 
               Page={Page} 
               setPage={setPage} 
               setUserSearch={setUserSearch} /> 

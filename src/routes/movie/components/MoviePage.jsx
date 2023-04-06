@@ -1,30 +1,35 @@
-import React from 'react';
-import GetData from '../../../components/GetData';
+import React, { useEffect } from 'react';
 import '../css/MoviePage.css'
+import Banner from '../../../components/TextBanner/banner';
+import useFetchData from '../../../hooks/test';
+import { useParams } from 'react-router-dom';
 
-function MoviePage({data}) {
-
-  console.dir(data && data)
+function MoviePage(props) {
+  const {id} = useParams()
+  const {response, error} = useFetchData(undefined,id)
+  
   return(
   <>
-    <div className='movieTab transparentEffect scroolBar'>
-      <div className="fixPosition">
-        <div className="backgroundMovieTab">
-          <div className="blackEffect"></div>
-            <img src={`https://image.tmdb.org/t/p/original/${data?.backdrop_path}`} alt="" />
-        </div>
+  {console.dir(response)}
+  {console.log(error)}
+  <div className="display">
+    <div className="backgroundMovie">
+        <div className="movieHeader">
+        <h1 className='movieTitle'>{response?.title}</h1>
+        {response?.tagline && <p className='movieTagLine'>{response?.tagline}</p>}
+        <Banner text={response?.release_date.substring(0,4)}/>
       </div>
-      <h1 className='movieTitle'>{data?.title}</h1>
-      <p className='movieTagline'>{data?.tagline}</p>
-      <h4 className='movieDate'>{data?.release_date.substr(0,4)}</h4>
-        <div className="movieSubTitle">
-          <li>
-            <p>{data?.overview}</p>
-          </li>
-        </div>
+      <div className="gradientBlackEffect"></div>
+        <img src={`https://image.tmdb.org/t/p/original/${response?.backdrop_path}`} alt={`${response?.title}`} />
+      </div>
+    <div className="contentText">
+      <div className="movieSubTitle">
+          <p>{response?.overview}</p>
+      </div>   
     </div>
+  </div>
   </>
   )
 }
 
-export default GetData(MoviePage);
+export default MoviePage;
