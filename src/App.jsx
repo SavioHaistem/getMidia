@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 
 function GetMidia() {
 
-  const [userSearch, setUserSearch] = useState('gato');
+  const [userSearch, setUserSearch] = useState();
   const [Page, setPage] = useState('2');
   return (  
     <>

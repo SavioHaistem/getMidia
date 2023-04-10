@@ -3,6 +3,7 @@ import '../css/MoviePage.css'
 import Banner from '../../../components/TextBanner/banner';
 import useFetch from '../../../hooks/useFatch';
 import { useParams } from 'react-router-dom';
+import AverageCard from '../../../components/VoteAverage/AverageCard';
 
 function MoviePage(props) {
   const {id} = useParams()
@@ -10,6 +11,7 @@ function MoviePage(props) {
   
   return(
   <>
+  {console.log(response)}
   <div className="display">
     <div className="backgroundMovie">
         <div className="movieHeader">
@@ -23,6 +25,7 @@ function MoviePage(props) {
     <div className="contentText">
       <div className="movieSubTitle">
           <p>{response?.overview}</p>
+          <AverageCard count={response?.vote_average}/>
       </div>   
     </div>
   </div>

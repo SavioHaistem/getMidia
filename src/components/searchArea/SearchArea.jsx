@@ -17,7 +17,6 @@ function SearchArea({setUserSearch}) {
         <S_SearchArea className='SearchArea'>
             <SearchBar setUserSearch={setUserSearch}/>
             <SearchFilter/>
-            <h1>Nam</h1>
         </S_SearchArea>
     </>    
         
