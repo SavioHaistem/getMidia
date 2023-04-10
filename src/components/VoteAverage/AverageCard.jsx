@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 const S_box = styled.div`
   width: 200px;
-  background-color: #ffffff70;
+  background-color: #2b2b2b6f;
   padding: 15px;
+  border-radius: 20px;
 
   circle {
     cx: 70;
     cy: 70;
     r: 70;
-
     width: 150px;
     height: 150px;
     fill: none;
@@ -21,10 +21,10 @@ const S_box = styled.div`
   }
   circle:nth-child(1) {
     stroke-dashoffset: 0;
-    stroke: #444444;
+    stroke: #393939;
   }
   circle:nth-child(2) {
-    //stroke-dashoffset: ;
+    stroke-dashoffset: calc(440 - ${props => props.averageToCircle});
     stroke: #0080a3;
   }
 
@@ -37,20 +37,18 @@ const S_box = styled.div`
 
 
 function AverageCard({count}) {
-  console.log(count)
-  const average_rate = Math.round(count * 10)
-  console.log(average_rate)
-
+  let average_rate = Math.round(count * 10);
+  let averageToCircle = Math.round(average_rate * 4.4)
   return (
     <>
-      <S_box>
+      <S_box averageToCircle={averageToCircle}>
         <div className="box-Circle">
           <svg>
             <circle></circle>
             <circle></circle>
           </svg>
         </div>
-          <h2>50%</h2>
+          <h2>{average_rate}</h2>
       </S_box>
     </>
   );
