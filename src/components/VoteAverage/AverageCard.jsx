@@ -5,8 +5,8 @@ const S_box = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 190px;
-  width: 190px;
+  height: 130px;
+  width: 130px;
   top: 0;
   left: 0;
   margin: 1rem;
@@ -14,28 +14,29 @@ const S_box = styled.div`
   border-radius: 10rem;
 
   circle {
-    cx: 70;
-    cy: 70;
-    r: 70;
-    width: 190px;
-    height: 190px;
+    cx: 50;
+    cy: 50;
+    r: 50;
+    width: 130px;
+    height: 130px;
     fill: none;
     stroke-width: 20;
-    transform: translate(25px,25px);
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
+    transform: translate(15px,17px);
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
   }
   circle:nth-child(1) {
     stroke-dashoffset: 0;
     stroke: #393939;
   }
   circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - ${props => props.averageToCircle});
+    stroke-dashoffset: calc(314 - ${props => props.averageToCircle});
     stroke: #3ca300;
+    stroke-linecap: round;
   }
   .box-Circle svg {
-    width: 190px;
-    height: 190px;
+    width: 130px;
+    height: 130px;
     position: relative;
   }
   .number {
@@ -53,7 +54,7 @@ const S_box = styled.div`
 
 function AverageCard({count}) {
   let average_rate = Math.round(count * 10);
-  let averageToCircle = Math.round(average_rate * 4.4)
+  let averageToCircle = Math.round(average_rate * 3.14)
   return (
     <>
       <S_box averageToCircle={averageToCircle}>
