@@ -1,12 +1,14 @@
 import '../css/home.css'
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ContentMovieCard from '../../../components/movieCard/MovieCard';
 import SearchArea from '../../../components/SearchArea/SearchArea';
 import useFetch from '../../../hooks/useFatch'
+import { AppContext } from '../../../App';
 
-
-function Home({userSearch, setUserSearch}) {
+function Home(props) {
+  const { userSearch, Page, setPage, setUserSearch } = useContext(AppContext)
+  console.log(userSearch, Page)
   const {response, error} = useFetch(userSearch)
 
   return (
