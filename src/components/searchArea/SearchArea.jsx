@@ -19,8 +19,7 @@ function SearchArea({setUserSearch}) {
             <SearchFilter/>
         </S_SearchArea>
     </>    
-        
-    );
+);
 }
 
 export default SearchArea;

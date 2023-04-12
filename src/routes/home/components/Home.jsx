@@ -11,15 +11,15 @@ function Home({userSearch, setUserSearch}) {
 
   return (
     <>
-    {console.log(userSearch, response)}
+    {console.dir(response)}
     <SearchArea setUserSearch={setUserSearch}/>
       <div className="contentarea">
         <ol className='contentlist'>
-          {response && response.results.map((movie, index) => 
+          {response && response.results.map((media, index) => 
           (
             <React.Fragment key={`${index}`}>
-              <Link to={`/movie/${movie.id}`} style={{textDecoration:'none', color: 'white', margin: 'none'}}>
-                <ContentMovieCard movie={movie}/>
+              <Link to={`/${media.media_type}/${media.id}`} style={{textDecoration:'none', color: 'white', margin: 'none'}}>
+                <ContentMovieCard movie={media}/>
               </Link>
             </React.Fragment>
           ))}

@@ -6,8 +6,8 @@ import { useParams } from 'react-router-dom';
 import AverageCard from '../../../components/VoteAverage/AverageCard';
 
 function MoviePage(props) {
-  const {id} = useParams()
-  const {response, error} = useFetch(undefined,id)
+  const {id, mediaType} = useParams();
+  const {response, error} = useFetch(undefined,id,mediaType)
   
   return(
   <>
@@ -15,9 +15,9 @@ function MoviePage(props) {
   <div className="display">
     <div className="backgroundMovie">
         <div className="movieHeader">
-        <h1 className='movieTitle'>{response?.title}</h1>
+        <h1 className='movieTitle'>{response?.title||response?.name}</h1>
         {response?.tagline && <p className='movieTagLine'>{response?.tagline}</p>}
-        <Banner text={response?.release_date.substring(0,4)}/>
+        {<Banner text={response?.release_date ? response?.release_date.substring(0,4) : response?.first_air_date.substring(0,4)}/>}
       </div>
       <div className="gradientBlackEffect"></div>
         <img src={`https://image.tmdb.org/t/p/original/${response?.backdrop_path}`} alt={`${response?.title}`} />

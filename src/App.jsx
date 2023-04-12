@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 
 function GetMidia() {
 
-  const [userSearch, setUserSearch] = useState();
+  const [userSearch, setUserSearch] = useState('One');
   const [Page, setPage] = useState('2');
   return (  
     <>
@@ -21,7 +21,7 @@ function GetMidia() {
               setUserSearch={setUserSearch} /> 
             }/>
         <Route 
-          path={'/movie/:id'} 
+          path={'/:mediaType/:id'} 
           element={ <MoviePage/> } />  
         </Routes>
     </>

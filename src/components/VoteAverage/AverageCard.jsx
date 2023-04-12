@@ -10,8 +10,9 @@ const S_box = styled.div`
   top: 0;
   left: 0;
   margin: 1rem;
-  background-color: #0000006d;
+  background-color: #1b1b1b79;
   border-radius: 10rem;
+  backdrop-filter: blur(5px);
 
   circle {
     cx: 50;
@@ -27,11 +28,11 @@ const S_box = styled.div`
   }
   circle:nth-child(1) {
     stroke-dashoffset: 0;
-    stroke: #393939;
+    stroke: #323232;
   }
   circle:nth-child(2) {
     stroke-dashoffset: calc(314 - ${props => props.averageToCircle});
-    stroke: #3ca300;
+    stroke: #5eff00;
     stroke-linecap: round;
   }
   .box-Circle svg {

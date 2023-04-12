@@ -9,11 +9,10 @@ function ContentMovieCard({movie}) {
       </div>
         <div className='gradientBlackEffect'></div>
         <div className="posterWrapper">
-          <p className="cardText">{movie.title}</p>
+          <p className="cardText">{movie.title||movie.name}</p>
             <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
               alt={`${movie.name}_Background`}
               className="moviePoster" />
-                <p className="cardText"> {`${movie.release_date.substring(0,4)}`} </p>
         </div>                 
       </div>
   </>);
