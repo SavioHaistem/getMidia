@@ -8,7 +8,10 @@ import AverageCard from '../../../components/VoteAverage/AverageCard';
 function MoviePage(props) {
   const {id, mediaType} = useParams();
   const {response, error} = useFetch(undefined,id,mediaType)
-  
+  if(!response) {
+    return <p>Carregando</p>
+  }
+
   return(
   <>
   {console.log(response)}
@@ -20,7 +23,8 @@ function MoviePage(props) {
         {<Banner text={response?.release_date ? response?.release_date.substring(0,4) : response?.first_air_date.substring(0,4)}/>}
       </div>
       <div className="gradientBlackEffect"></div>
-        <img src={`https://image.tmdb.org/t/p/original/${response?.backdrop_path}`} alt={`${response?.title}`} />
+        <img style={{zIndex: '0' ,objectFit: 'contain'}} src={`https://image.tmdb.org/t/p/original/${response?.backdrop_path}`} alt={`${response?.title}`} />
+        <img style={{zIndex: '-1' ,objectFit: 'cover', filter: 'blur(6px)' }} src={`https://image.tmdb.org/t/p/original/${response?.backdrop_path}`} alt={`${response?.title}`} />
       </div>
     <div className="contentText">
       <div className="movieSubTitle">

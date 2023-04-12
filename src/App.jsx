@@ -8,7 +8,7 @@ export const AppContext = createContext(null)
 
 export function GetMidia() {
 
-  const [userSearch, setUserSearch] = useState('One');
+  const [userSearch, setUserSearch] = useState();
   const [Page, setPage] = useState('2');
 
   return (  

@@ -1,7 +1,7 @@
 .searchfilter {
   margin: 0px 1rem;
+  padding: 1rem;
   display: flex;
-  width: 18rem;
   min-height: 3.3rem;
   border-radius: 3.3rem;
   justify-content: space-evenly;

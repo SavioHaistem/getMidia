@@ -8,9 +8,11 @@ import { AppContext } from '../../../App';
 
 function Home(props) {
   const { userSearch, Page, setPage, setUserSearch } = useContext(AppContext)
-  console.log(userSearch, Page)
-  const {response, error} = useFetch(userSearch)
+  const { response, error } = useFetch(userSearch)
 
+  if(!response) {
+    return <h1>carregando. . .</h1>
+  }
   return (
     <>
     {console.dir(response)}
@@ -20,7 +22,7 @@ function Home(props) {
           {response && response.results.map((media, index) => 
           (
             <React.Fragment key={`${index}`}>
-              <Link to={`/${media.media_type}/${media.id}`} style={{textDecoration:'none', color: 'white', margin: 'none'}}>
+              <Link to={`/${media.media_type||'movie'}/${media.id}`} style={{textDecoration:'none', color: 'white', margin: 'none'}}>
                 <ContentMovieCard movie={media}/>
               </Link>
             </React.Fragment>
