@@ -6,17 +6,32 @@ import SearchArea from '../../../components/SearchArea/SearchArea';
 import useFetch from '../../../hooks/useFatch'
 import { AppContext } from '../../../App';
 
-function Home(props) {
-  const { userSearch, Page, setPage, setUserSearch } = useContext(AppContext)
-  const { response, error } = useFetch(userSearch)
+function Home() {
+  let { userSearch, Page, setUserSearch, setPage } = useContext(AppContext)
+  const { response, error } = useFetch(undefined, undefined, userSearch, Page)
 
   if(!response) {
     return <h1>carregando. . .</h1>
   }
+  
+  function backOnePage() {
+    if (Page > 1) {
+      setPage(--Page)
+      console.log(Page)
+    }
+  }
+  function nextOnePage() {
+    if (Page < response.total_pages) {
+      setPage(++Page)
+      console.log(Page)
+    }
+  }
+
   return (
     <>
-    {console.dir(response)}
-    <SearchArea setUserSearch={setUserSearch}/>
+    <SearchArea/>
+    <button onClick={backOnePage}> BackPage</button>
+    <button onClick={nextOnePage}> NextPage </button>
       <div className="contentarea">
         <ol className='contentlist'>
           {response && response.results.map((media, index) => 

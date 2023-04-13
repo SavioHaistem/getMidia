@@ -9,7 +9,7 @@ export const AppContext = createContext(null)
 export function GetMidia() {
 
   const [userSearch, setUserSearch] = useState();
-  const [Page, setPage] = useState('2');
+  const [Page, setPage] = useState(1);
 
   return (  
     <>
@@ -17,7 +17,7 @@ export function GetMidia() {
         <Routes>
           <Route 
             path="/" 
-            element={ <Home /> }/>
+            element={ <Home Page={Page}/> }/>
           <Route 
             path={'/:mediaType/:id'} 
             element={ <MoviePage/> } />  
