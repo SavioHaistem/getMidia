@@ -11,7 +11,7 @@ function NextPageButton() {
   return (
     <>
       <StyleButton right={0}>
-        <button className="transparentEffect" onClick={()=>setPage(++Page)}>
+        <button className="transparentEffect Circle" onClick={()=>setPage(++Page)}>
           <i className="filtericon fas fa-caret-right"></i>
         </button>
       </StyleButton>

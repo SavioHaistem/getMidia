@@ -11,7 +11,7 @@ function PreviusPageButton() {
   return (
     <>
       <StyleButton rigtht={1}>
-        <button className="transparentEffect" onClick={()=>setPage(--Page)}>
+        <button className="transparentEffect Circle" onClick={()=>setPage(--Page)}>
           <i className="filtericon fas fa-caret-left"></i>
         </button>
       </StyleButton>

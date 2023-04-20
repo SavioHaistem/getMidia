@@ -10,10 +10,11 @@ export function GetMidia() {
 
   const [userSearch, setUserSearch] = useState();
   const [Page, setPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
 
   return (  
     <>
-      <AppContext.Provider value={{ userSearch, Page, setPage, setUserSearch }}>
+      <AppContext.Provider value={{ userSearch, Page, setPage, setUserSearch, totalPages, setTotalPages }}>
         <Routes>
           <Route 
             path="/" 
