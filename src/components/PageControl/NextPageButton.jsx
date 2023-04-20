@@ -8,10 +8,16 @@ library.add(faCaretRight);
 function NextPageButton() {
   let { Page, setPage } = useContext(AppContext)
 
+  function nextPage() {
+    if ( Page < totalPages ) {
+      setPage(++Page)
+    }
+  }
+
   return (
     <>
       <StyleButton right={0}>
-        <button className="transparentEffect Circle" onClick={()=>setPage(++Page)}>
+        <button className="transparentEffect Circle" onClick={nextPage}>
           <i className="filtericon fas fa-caret-right"></i>
         </button>
       </StyleButton>

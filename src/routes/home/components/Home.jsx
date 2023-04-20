@@ -9,13 +9,15 @@ import ControlsArea from '../../../components/PageControl/ControlsArea';
 
 function Home() {
   
-  let { userSearch, Page, setUserSearch, setPage } = useContext(AppContext)
+  let { userSearch, Page, setUserSearch, setPage, totalPages, setTotalPages } = useContext(AppContext)
   const { response, error } = useFetch(undefined, undefined, userSearch, Page)
 
   if(!response) {
     return <h1>carregando. . .</h1>
   }
-  
+
+  setTotalPages(response.total_pages)
+  console.log(totalPages)
   return (
     <>
     <SearchArea/>

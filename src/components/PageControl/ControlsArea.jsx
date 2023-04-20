@@ -8,7 +8,7 @@ function ControlsArea() {
     <>
       <S_ControlsArea>
         <PreviusPageButton/>
-        <CountCurrentPage/>
+          <CountCurrentPage/>
         <NextPageButton/>
       </S_ControlsArea>
     </>
