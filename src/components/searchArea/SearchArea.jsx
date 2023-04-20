@@ -8,7 +8,7 @@ import useFetch from '../../hooks/useFatch';
 const S_SearchArea = styled.div`
     margin: auto;
     width: 80vw;
-    height: 9rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ function SearchArea(props) {
 
     return (
     <>
-        <S_SearchArea className='SearchArea'>
+        <S_SearchArea>
             <SearchBar setUserSearch={setUserSearch}/>
             <SearchFilter/>
         </S_SearchArea>
