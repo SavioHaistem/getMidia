@@ -1,6 +1,11 @@
 import styled from "styled-components"
 
 const S_ControlsArea = styled.div`
+  margin-top: 5rem;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
 `

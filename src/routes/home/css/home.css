@@ -1,20 +1,25 @@
 .contentarea {
   margin: auto;
   display: flex;
-  height: 78vh;
-  width: 95vw;
+  height: 100vh;
+  width: 100vw;
   overflow: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
-.contentarea::-webkit-scrollbar {
+.contentarea .contentlist::-webkit-scrollbar {
   display: none;
 }
 .contentlist {
-  margin: auto;
+  margin-bottom: 1.1rem;
+  overflow: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 14rem));
   grid-auto-rows: 21rem;
   gap: 1rem;
-  width: 100vw;
+  width: 95vw;
+  height: 78vh;
   justify-content: center;
   justify-items: center;
   align-items: center ;

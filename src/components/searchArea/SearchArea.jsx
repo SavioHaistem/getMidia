@@ -6,8 +6,12 @@ import { AppContext } from '../../App';
 import useFetch from '../../hooks/useFatch';
 
 const S_SearchArea = styled.div`
-    margin: auto;
-    width: 80vw;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
     height: 5rem;
     display: flex;
     justify-content: center;

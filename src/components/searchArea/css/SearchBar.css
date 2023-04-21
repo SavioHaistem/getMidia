@@ -10,7 +10,7 @@
     transition: all 0.2s;
 }
 .SearchBar:hover {
-    width: 32rem;
+    width: 31rem;
 }
 .SearchBar::placeholder {
     color: rgb(208, 208, 208);
@@ -23,6 +23,9 @@
     .SearchBar {
         width: 15rem;
         height: 3rem;
+    }
+    .SearchBar:hover {
+        width: 18rem;
     }
     
 }
