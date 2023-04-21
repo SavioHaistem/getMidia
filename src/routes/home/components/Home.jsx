@@ -17,8 +17,7 @@ function Home() {
   }
 
   response.total_pages ? setTotalPages(response.total_pages) : setTotalPages(1)
-  console.log(totalPages)
-  
+
   return (
     <>
     <SearchArea/>

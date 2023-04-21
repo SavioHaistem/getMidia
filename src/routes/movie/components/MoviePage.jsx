@@ -6,9 +6,10 @@ import { useParams } from 'react-router-dom';
 import AverageCard from '../../../components/VoteAverage/AverageCard';
 
 function MoviePage(props) {
-  console.log('renderizou')
   const {id, mediaType} = useParams();
+
   const {response, error} = useFetch(id, mediaType)
+  
   if(!response) {
     return <p>Carregando . . .</p>
   }
