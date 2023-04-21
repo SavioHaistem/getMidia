@@ -24,6 +24,15 @@ body::-webkit-scrollbar {
   height: 100%;
   width: 100vw;
 }
+.CoverPoster { 
+  z-index: -1;
+  object-fit: cover;
+  filter: blur(6px);
+}
+.ContainPoster {
+  z-index: 0;
+  object-fit: contain;
+}
 .movieHeader {
   position: absolute;
   z-index: 2;
@@ -48,4 +57,10 @@ body::-webkit-scrollbar {
 .movieSubTitle {
   text-align: center;
   padding: 0px 10vw;
+}
+@media (max-width: 895px) {
+  .ContainPoster {
+    z-index: 0;
+    object-fit: cover;
+  }
 }
