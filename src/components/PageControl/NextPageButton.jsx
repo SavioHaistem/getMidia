@@ -6,7 +6,7 @@ import { AppContext } from "../../App";
 library.add(faCaretRight);
 
 function NextPageButton() {
-  let { Page, setPage } = useContext(AppContext)
+  let { Page, setPage, totalPages } = useContext(AppContext)
 
   function nextPage() {
     if ( Page < totalPages ) {

@@ -11,7 +11,7 @@ function useFetch (movieId=undefined, mediaType=undefined, userSearch=undefined,
     .then((res)=> setResponse(res.data))
     .catch((error)=> setError(error))
   },[userSearch,Page]) : movieId ? useEffect(() => {
-    axios.get(`https://api.themoviedb.org/3/${mediaType}/${movieId}?api_key=${mykey}&language=pt-BR`)
+    axios.get(`https://api.themoviedb.org/3/${mediaType}/${movieId}?api_key=${mykey}&language=pt-BR&page=${Page}`)
     .then((res)=> setResponse(res.data))
     .catch((error)=> setError(error))
   },[]) : useEffect(()=>{

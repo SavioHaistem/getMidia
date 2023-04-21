@@ -16,8 +16,9 @@ function Home() {
     return <h1>carregando. . .</h1>
   }
 
-  setTotalPages(response.total_pages)
+  response.total_pages ? setTotalPages(response.total_pages) : setTotalPages(1)
   console.log(totalPages)
+  
   return (
     <>
     <SearchArea/>
