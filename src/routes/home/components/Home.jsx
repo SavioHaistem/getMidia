@@ -20,8 +20,10 @@ function Home() {
 
   return (
     <>
-    <SearchArea/>
+    <header>
+      <SearchArea/>
       <ControlsArea/>
+    </header>
       <div className="contentarea">
         <ol className='contentlist'>
           {response && response.results.map((media, index) => 

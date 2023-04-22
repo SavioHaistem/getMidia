@@ -1,8 +1,17 @@
+header {
+  padding: 1rem 0rem;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 0.5rem;
+}
 .contentarea {
   margin: auto;
   display: flex;
-  height: 100vh;
-  width: 100vw;
   overflow: auto;
   display: flex;
   align-items: flex-end;
@@ -12,14 +21,13 @@
   display: none;
 }
 .contentlist {
-  margin-bottom: 1.1rem;
   overflow: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 14rem));
   grid-auto-rows: 21rem;
   gap: 1rem;
   width: 95vw;
-  height: 78vh;
+  height: 77vh;
   justify-content: center;
   justify-items: center;
   align-items: center ;
