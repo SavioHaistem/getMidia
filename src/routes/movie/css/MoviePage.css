@@ -42,8 +42,10 @@ body::-webkit-scrollbar {
   text-align: center;
   padding: 0px 1rem;
   display: grid;
-  grid-template-rows: 1fr 0.5fr 0.8fr;
-  justify-items: center;
+  grid-template-rows: 1fr;
+}
+.movieTitle {
+  margin: 0px 17rem;
 }
 .movieTagLine {
   color: rgb(192, 192, 192);
