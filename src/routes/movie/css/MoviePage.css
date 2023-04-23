@@ -45,7 +45,9 @@ body::-webkit-scrollbar {
   grid-template-rows: 1fr;
 }
 .movieTitle {
-  margin: 0px 17rem;
+  padding: 0px 20%;
+  max-height: 30vh;
+  overflow: hidden;
 }
 .movieTagLine {
   color: rgb(192, 192, 192);
@@ -57,12 +59,18 @@ body::-webkit-scrollbar {
   grid-area: contentArea;
 }
 .movieDescription {
-  margin: 0px 15rem 0px 15rem;
   text-align: center;
+  padding: 0px 13%;
 }
 @media (max-width: 895px) {
   .ContainPoster {
     z-index: 0;
     object-fit: cover;
+  }
+  .movieTitle {
+    padding: 0px 10%;
+  }
+  .movieTagLine {
+    margin: 1% 15%;
   }
 }
