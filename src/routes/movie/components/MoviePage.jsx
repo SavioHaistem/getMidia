@@ -27,8 +27,8 @@ function MoviePage(props) {
         <img className='ContainPoster' src={`https://image.tmdb.org/t/p/original/${response?.backdrop_path}`} alt={`${response?.title}`} />
         <img className='CoverPoster' src={`https://image.tmdb.org/t/p/original/${response?.backdrop_path}`} alt={`${response?.title}`} />
       </div>
-    <div className="contentText">
-      <div className="movieSubTitle">
+    <div className="contentArea">
+      <div className="movieDescription">
           <p>{response?.overview}</p>
           <AverageCard count={response?.vote_average}/>
       </div>   

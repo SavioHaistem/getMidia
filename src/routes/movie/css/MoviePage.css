@@ -7,10 +7,10 @@ body::-webkit-scrollbar {
 }
 .display {
   display: grid;
-  grid-template-rows: 80vh 1fr;
+  grid-template-rows: 80vh;
   grid-template-areas: 
   'backgroundMovie'
-  'contentText'
+  'contentArea'
   ;
 }
 .backgroundMovie {
@@ -48,15 +48,15 @@ body::-webkit-scrollbar {
 .movieTagLine {
   color: rgb(192, 192, 192);
 }
-.contentText {
+.contentArea {
+  min-height: 20vh;
   padding: 2rem;
   background-color: black;
-  grid-area: contentText;
-  z-index: 2;
+  grid-area: contentArea;
 }
-.movieSubTitle {
+.movieDescription {
+  margin: 0px 15rem 0px 15rem;
   text-align: center;
-  padding: 0px 10vw;
 }
 @media (max-width: 895px) {
   .ContainPoster {
