@@ -2,7 +2,7 @@ import '../css/home.css'
 import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ContentMovieCard from '../../../components/movieCard/MovieCard';
-import SearchArea from '../../../components/SearchArea/SearchArea';
+import SearchArea from '../../../components/searchArea/SearchArea';
 import useFetch from '../../../hooks/useFatch'
 import { AppContext } from '../../../App';
 import ControlsArea from '../../../components/PageControl/ControlsArea';
